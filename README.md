@@ -13,7 +13,7 @@ When failure happens and message routed to dead letter queue, the Message header
 <h1>time</h1> - the date and time the message was dead lettered as a 64-bit AMQP format timestamp,<br>
 <h1>exchange</h1> - the exchange the message was published to (note that this will be a dead letter exchange if the message is dead lettered multiple times),<br>
 <h1>routing-keys</h1> - the routing keys (including CC keys but excluding BCC ones) the message was published with<br>
-<h1>count</h1> - how many times this message was dead-lettered in this queue for this reason<br>
+<h1>count</h1> - how many times this message was dead-lettered in this queue for this reason<br><br><br>
 
 Here Reason and Count could be your best guy to implement your custom logic.
 
