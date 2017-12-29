@@ -8,7 +8,7 @@ If there is one configured via x-dead-letter-exchange argument then it routes th
 
 When failure happens and message routed to dead letter queue, the Message header map key xdeath contains sufficient information about message failure like :
 
-queue - the name of the queue the message was in before it was dead-lettered,
+queue - the name of the queue the message was in before it was dead-lettered,<br>
 reason - reason of rejection or failure
 time - the date and time the message was dead lettered as a 64-bit AMQP format timestamp,
 exchange - the exchange the message was published to (note that this will be a dead letter exchange if the message is dead lettered multiple times),
