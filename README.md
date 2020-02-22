@@ -1,7 +1,7 @@
 # dead-letter-with-RabbitMQ
 implementation of RabbitMQ dead letter queue feature with Spring Boot
 
-Te dead letter exchange feature can be implement using topic, funout and direct.
+The dead letter exchange feature can be implement using topic, funout and direct.
 Whenever failure occurs during processing a message fetched from a queue, RabbitMQ checks if there is a dead letter exchange configured for that queue. 
 
 If there is one configured via x-dead-letter-exchange argument then it routes the failed messages to it with the original routing key. This routing key can be overridden via the x-dead-letter-routing-key argument.
